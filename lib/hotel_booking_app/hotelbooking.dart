@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:hotel_ui/hotel_booking_app/components/appbar.dart';
 import 'package:hotel_ui/hotel_booking_app/components/popularhotels.dart';
 import 'package:hotel_ui/hotel_booking_app/components/searchbar.dart';
-import 'package:hotel_ui/hotel_booking_app/hotelpackages.dart';
+import 'package:hotel_ui/hotel_booking_app/components/hotelpackages.dart';
 
 void main(List<String> args) {
   runApp(MaterialApp(
