@@ -1,7 +1,9 @@
 ## main op-hotel ui
 ![hotel ui op](https://user-images.githubusercontent.com/113667646/203596140-9d110f0c-6f6b-4f9a-934d-fe4ff9b7e669.png)
 ## hoteldetails-ui-op
-![hotel details op1](https://user-images.githubusercontent.com/113667646/204014590-8b1c3e99-e065-4506-b6e7-101ebd255ee0.png)
+![hotel_details_op_1](https://user-images.githubusercontent.com/113667646/204541051-9a855cf4-84dd-4eda-8dfc-23404a20626e.png)
+![hotel_details_op_2](https://user-images.githubusercontent.com/113667646/204541099-9651cbe3-1bbe-488a-803e-0cbe9571cfb1.png)
+
 # hotelbooking-ui-op
 ![hotel_booking_ui_op_1](https://user-images.githubusercontent.com/113667646/204452281-e2df3071-f6e4-41d2-bd70-f1e3dec61991.png)
 ![hotel_booking_ui_op_2](https://user-images.githubusercontent.com/113667646/204452457-a9ea276f-e863-401c-b353-4a6ad004a7c7.png)
