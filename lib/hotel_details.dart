@@ -8,7 +8,12 @@ void main() {
   ));
 }
 
-class hotel_detailss extends StatelessWidget {
+class hotel_detailss extends StatefulWidget {
+  @override
+  State<hotel_detailss> createState() => _hotel_detailssState();
+}
+
+class _hotel_detailssState extends State<hotel_detailss> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,8 +34,7 @@ class hotel_detailss extends StatelessWidget {
             child: AppBar(
               leading: IconButton(
                   onPressed: () {
-                    Navigator.pop(context,
-                        MaterialPageRoute(builder: ((context) => hotelui())));
+                    Navigator.pop(context);
                   },
                   icon: Icon(Icons.arrow_back)),
               title: const Text(

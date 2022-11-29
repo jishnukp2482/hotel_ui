@@ -86,7 +86,7 @@ class _hoteluiState extends State<hotelui> {
                 padding: const EdgeInsets.all(30),
                 child: GestureDetector(
                   onTap: () {
-                    Navigator.pushReplacement(
+                    Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: ((context) => hotel_detailss())));
