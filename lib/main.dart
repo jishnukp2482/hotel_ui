@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hotel_ui/hotel_details.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -7,7 +8,12 @@ void main() {
   ));
 }
 
-class hotelui extends StatelessWidget {
+class hotelui extends StatefulWidget {
+  @override
+  State<hotelui> createState() => _hoteluiState();
+}
+
+class _hoteluiState extends State<hotelui> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,64 +84,110 @@ class hotelui extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(30),
-                child: Card(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Stack(
-                        children: [
-                          Container(
-                            height: 250,
-                            width: 900,
-                            decoration: const BoxDecoration(
-                              color: Colors.transparent,
-                              borderRadius: BorderRadius.only(
-                                topRight:Radius.circular(10),
-                                topLeft: Radius.circular(10)),
-                              image: DecorationImage(
-                                  image: AssetImage("assets/img/hotel1.jpg"),
-                                  fit: BoxFit.fill),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: ((context) => hotel_detailss())));
+                  },
+                  child: Card(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Stack(
+                          children: [
+                            Container(
+                              height: 250,
+                              width: 900,
+                              decoration: const BoxDecoration(
+                                color: Colors.transparent,
+                                borderRadius: BorderRadius.only(
+                                    topRight: Radius.circular(10),
+                                    topLeft: Radius.circular(10)),
+                                image: DecorationImage(
+                                    image: AssetImage("assets/img/hotel1.jpg"),
+                                    fit: BoxFit.fill),
+                              ),
                             ),
-                          ),
-                          const Positioned(
-                            top: 10,
-                            right: 10,
-                            child:Icon(Icons.star_border_outlined,color: Colors.white,size: 20,) ),
+                            const Positioned(
+                                top: 10,
+                                right: 10,
+                                child: Icon(
+                                  Icons.star_border_outlined,
+                                  color: Colors.white,
+                                  size: 20,
+                                )),
                             Positioned(
-                              bottom: 10,
-                              right: 10,
-                              child:Container(
-                                height: 30,
-                                width: 40,
-                                color: Colors.white,
-                                child: const Center(child: Text("\$40",style: TextStyle(color: Colors.black),)),
-                              ) ),
-                             
-                        ],
-                      ),
-                       Padding(padding: const EdgeInsets.only(top: 20,left: 15),
-                         child:   Column(
-                               crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const Text("Awesome room near Palakkad",style: TextStyle(fontWeight: FontWeight.bold,
-                                  fontSize: 20),),
-                                  const Text("Palakkad,Kerala",style: TextStyle(fontSize: 15),),
-                                  Padding(padding: const EdgeInsets.only(top: 5),
-                                 child: Row(
-                                    children: [
-                                      const Icon(Icons.star_outlined,color: Colors.green,size: 20,),
-                                      const Icon(Icons.star_outlined,color: Colors.green,size: 20,),
-                                      const Icon(Icons.star_outlined,color: Colors.green,size: 20,),
-                                      const Icon(Icons.star_outlined,color: Colors.green,size: 20,),
-                                      const Icon(Icons.star_outlined,color: Colors.green,size: 20,),    
-                                      const Text('(220 reviews)',style: TextStyle(color: Colors.black54),),   
-                                    ],
-
-                                  ),),
-                                ],
-                              ),),
-                      
-                    ],
+                                bottom: 10,
+                                right: 10,
+                                child: Container(
+                                  height: 30,
+                                  width: 40,
+                                  color: Colors.white,
+                                  child: const Center(
+                                      child: Text(
+                                    "\$40",
+                                    style: TextStyle(color: Colors.black),
+                                  )),
+                                )),
+                          ],
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 20, left: 15),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                "Awesome room near Palakkad",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 20),
+                              ),
+                              const Text(
+                                "Palakkad,Kerala",
+                                style: TextStyle(fontSize: 15),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 5),
+                                child: Row(
+                                  children: [
+                                    const Icon(
+                                      Icons.star_outlined,
+                                      color: Colors.green,
+                                      size: 20,
+                                    ),
+                                    const Icon(
+                                      Icons.star_outlined,
+                                      color: Colors.green,
+                                      size: 20,
+                                    ),
+                                    const Icon(
+                                      Icons.star_outlined,
+                                      color: Colors.green,
+                                      size: 20,
+                                    ),
+                                    const Icon(
+                                      Icons.star_outlined,
+                                      color: Colors.green,
+                                      size: 20,
+                                    ),
+                                    const Icon(
+                                      Icons.star_outlined,
+                                      color: Colors.green,
+                                      size: 20,
+                                    ),
+                                    const Text(
+                                      '(220 reviews)',
+                                      style: TextStyle(color: Colors.black54),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               )
