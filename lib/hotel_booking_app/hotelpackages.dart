@@ -6,29 +6,32 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class hotelpackages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(children: [
-        roompackage(
-            roomimage: 'assets/img/room.webp',
-            hotelname: "Crown Plaza",
-            hoteldetails: 'A five star hotel in Kochi',
-            hotelprice: '\$1000 / night'),
-        roompackage(
-            roomimage: 'assets/img/hotelbookingimages/room2.jpg',
-            hotelname: "Hotel Taj",
-            hoteldetails: 'A five star hotel in Kochi',
-            hotelprice: '\$1200 / night'),
-        roompackage(
-            roomimage: 'assets/img/hotelbookingimages/room3.jpg',
-            hotelname: "Hotel Raw",
-            hoteldetails: 'A four star hotel in Kakkanad',
-            hotelprice: '\$800 / night'),
-        roompackage(
-            roomimage: 'assets/img/hotelbookingimages/room4.jpg',
-            hotelname: "Hotel Diamond ",
-            hoteldetails: 'A four star hotel in Edapalli',
-            hotelprice: '\$850 / night'),
-      ]),
+    return SingleChildScrollView(
+      physics: BouncingScrollPhysics(),
+      child: Container(
+        child: Column(children: [
+          roompackage(
+              roomimage: 'assets/img/room.webp',
+              hotelname: "Crown Plaza",
+              hoteldetails: 'A five star hotel in Kochi',
+              hotelprice: '\$1000 / night'),
+          roompackage(
+              roomimage: 'assets/img/hotelbookingimages/room2.jpg',
+              hotelname: "Hotel Taj",
+              hoteldetails: 'A five star hotel in Kochi',
+              hotelprice: '\$1200 / night'),
+          roompackage(
+              roomimage: 'assets/img/hotelbookingimages/room3.jpg',
+              hotelname: "Hotel Raw",
+              hoteldetails: 'A four star hotel in Kakkanad',
+              hotelprice: '\$800 / night'),
+          roompackage(
+              roomimage: 'assets/img/hotelbookingimages/room4.jpg',
+              hotelname: "Hotel Diamond ",
+              hoteldetails: 'A four star hotel in Edapalli',
+              hotelprice: '\$850 / night'),
+        ]),
+      ),
     );
   }
 }
