@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hotel_ui/hotel_booking_app/hotelbooking.dart';
 import 'package:hotel_ui/hotel_details.dart';
 
 void main() {
@@ -193,6 +194,15 @@ class _hoteluiState extends State<hotelui> {
               )
             ],
           ),
+          TextButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => hotelbooking(),
+                    ));
+              },
+              child: Text("Show more...")),
         ]))
       ],
     ));
